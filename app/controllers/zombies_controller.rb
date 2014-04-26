@@ -5,6 +5,7 @@ class ZombiesController < ApplicationController
   # GET /zombies.json
   def index
     @zombies = Zombie.all
+     render :layout => 'zombies'
   end
 
   # GET /zombies/1
