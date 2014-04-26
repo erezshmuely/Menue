@@ -6,7 +6,7 @@ class ZombiesController < ApplicationController
   def index
     @zombies = Zombie.all
      render :layout => 'zombies'
-      render :view => 'new'
+
   end
 
   # GET /zombies/1
@@ -17,7 +17,7 @@ class ZombiesController < ApplicationController
   # GET /zombies/new
   def new
     @zombie = Zombie.new
-      render :layout => 'zombies'
+     
   end
 
   # GET /zombies/1/edit
