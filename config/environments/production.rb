@@ -16,7 +16,7 @@ ActionMailer::Base.smtp_settings = {
   :port                 => 587,
   :domain               => "http://a1234.herokuapp.com",
   :user_name            => "halifotesh@gmail.com",
-  :password             => "cm20012002",
+  :password             => "Gugy4all",
   :authentication       => "plain",
   :enable_starttls_auto => true
 }
@@ -50,8 +50,11 @@ ActionMailer::Base.smtp_settings = {
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
+
+config.assets.precompile += ['application.js', 'size.js', 'application.css', 'leads.css', 'scaffold.css', 'zombies.css', 'mobile.css']
+
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Generate digests for assets URLs.
   config.assets.digest = true
