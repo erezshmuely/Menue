@@ -6,6 +6,14 @@ development:
   username: erez
   password: g4ssGbel
 
+  test:
+  adapter: postgresql
+  host: localhost
+  username: erez
+  password: g4ssGbel
+  database: erez        # or whatever the name is
+  encoding: UTF8
+
 
 production:
 adapter: postgresql

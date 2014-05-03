@@ -17,7 +17,7 @@ class ZombiesController < ApplicationController
   # GET /zombies/new
   def new
     @zombie = Zombie.new
-     render :layout => 'zombies'
+     
      
   end
 
