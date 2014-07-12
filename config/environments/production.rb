@@ -51,7 +51,7 @@ ActionMailer::Base.smtp_settings = {
   # config.assets.css_compressor = :sass
 
 
-config.assets.precompile += ['application.js', 'size.js', 'application.css', 'leads.css', 'scaffold.css', 'zombies.css', 'mobile.css', 'zombies.js']
+config.assets.precompile += ['application.js','flipclock.js','flipclock.min.js','jquery.js','please.js', 'size.js', 'application.css.scss','flipclock.css', 'landing.scss', 'scaffold.css.scss', 'zombies.css.scss', 'L.jpg', 'R.jpg', 'zombies.js']
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
