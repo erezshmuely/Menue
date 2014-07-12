@@ -1,7 +1,7 @@
 TwitterForZombies::Application.configure do
 
 
-  config.action_mailer.default_url_options = { :host => 'http://a1234.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'http://smartcapital.herokuapp.com' }
 config.action_mailer.delivery_method = :smtp
 # change to true to allow email to be sent during development
 config.action_mailer.perform_deliveries = true
@@ -14,7 +14,7 @@ ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
   :address              => "smtp.gmail.com",
   :port                 => 587,
-  :domain               => "http://a1234.herokuapp.com",
+  :domain               => "http://smartcapital.herokuapp.com",
   :user_name            => "halifotesh@gmail.com",
   :password             => "Gugy4all",
   :authentication       => "plain",

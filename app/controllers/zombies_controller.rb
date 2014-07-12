@@ -28,6 +28,7 @@ class ZombiesController < ApplicationController
   # POST /zombies
   # POST /zombies.json
   def create
+    
     @zombie = Zombie.new(zombie_params)
 
      ZombieMailer.create(@zombie).deliver

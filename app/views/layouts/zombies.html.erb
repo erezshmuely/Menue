@@ -5,81 +5,47 @@
 
 	 <meta name="viewport" content="width=1360">
 
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="/assets/javascripts/flipclock.js"></script>
+
+    <script src="/assets/javascripts/jquery.js"></script>
+    <script src="/assets/javascripts/flipclock.min.js"></script>
+
+
+
+
 </head>
 
 <body id="main">
 
 
 
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
 
-<!-- Single button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-    Action <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" role="menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
+<script type="text/javascript">
+    var clock;
+    
+    $(document).ready(function() {
+      var clock;
 
-<div id="txt"></div>
+      clock = $('.clock').FlipClock(604800, {
+            clockFace: 'DailyCounter',
+            countdown: true,
+            callbacks: {
+              stop: function() {
+                $('.message').html('The clock has stopped!')
+              }
+            }
+        });
+
+    });
+  </script>
+
+
+
+
 
 <!--
 
@@ -87,9 +53,16 @@
 
 -->
 
-<%= javascript_include_tag "please" %>
+
+
+
+
+
 
 <%= stylesheet_link_tag "zombies" %>
+<%= stylesheet_link_tag "flipclock" %>
+
+
 
 
 
@@ -112,11 +85,272 @@
 
 
 
-<%= image_tag "Smart Capital Free Course6.jpg", :id => "IMG_1", :class => "img-responsive" %>
 
 
+<div id="DIV_1">
+  <div id="DIV_2">
+    <h5 id="H5_3">
+      <span id="SPAN_4"><span id="SPAN_5">מתנה מיוחדת לזמן מוגבל!!!</span></span>
+    </h5>
+    <p id="P_6">
+    </p>
+    <p id="P_7">
+    </p>
+    <p id="P_8">
+    </p>
+    <p id="P_9">
+      <span id="SPAN_10"><span id="SPAN_11"></span></span>
+    </p>
+  </div>
+  
+  <div id="DIV_22">
+  </div>
+  <div id="DIV_24">
+    <p id="P_25">
+      תשאירו פרטים וקבלו את כל
+    </p>
+    <p id="P_27">
+      ההטבות חינם!
+    </p>
+    <p id="P_29">
+    </p>
+  </div>
+  <div id="DIV_30">
+    <h2 id="H2_31">
+      
+    </h2>
+  </div>
+  <div id="DIV_35">
+    <h2 id="H2_36">
+      הטבות חינם
+    </h2>
+  </div>
+</div>
+
+
+<%= image_tag "L.jpg", :id => "L", :class => "img-responsive" %>
+<%= image_tag "R.jpg", :id => "R", :class => "img-responsive" %>
+
+
+
+<div id="txt"></div>
+
+<%= javascript_include_tag "application" %>
+
+
+
+
+
+
+
+  
+
+    <!--
+  
+  <div class="clock" style="margin:2em;"></div>
+
+  -->
+
+  
+
+ 
+  
+<!-- Contact Us Form -->
+
+
+
+
+  <form name="form1" method="post" action="form.aspx?cacheKiller=14044993648710&amp;compId=TPWdgt4-c65&amp;deviceType=desktop&amp;instance=G_lPqO2zL3apI00_YtRQYTrf0EWb263rYiOm5R_EgwQ.eyJpbnN0YW5jZUlkIjoiMTMzNGQ1ZjYtNzFhMC0yNDA1LTllYmUtZTNkYWNkOGVmMjRiIiwic2lnbkRhdGUiOiIyMDE0LTA3LTA0VDEzOjQyOjQzLjcyMy0wNTowMCIsInVpZCI6IjJkOTEyOGM4LTgwYTQtNGRmNi05ZTQxLWU1NDQ0MTkxZjY5MCIsInBlcm1pc3Npb25zIjoiT1dORVIiLCJpcEFuZFBvcnQiOiI4NS42NC40Ni4xMjQvNTY3MzgiLCJ2ZW5kb3JQcm9kdWN0SWQiOm51bGwsImRlbW9Nb2RlIjpmYWxzZX0&amp;locale=en&amp;viewMode=site&amp;width=270"  id="form1" onsubmit="return false;">
+
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEwNTQ3MzcxMzJkZEy1UlNVkVVaJdQ5mm9J85SyvOlu/26mvJwVQ9hIECo2">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=7ghh6NMLNuAFx2FCtdZEiqOss42Hh6DhUxmJV_EQkokHZCZYTBkVNfqmBpqHfU6vyGR8Csum5eHmh7W_qn-88Rq2Bb8VPPJcGpC2MpV-1-c1&amp;t=635145251460000000" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=1pR_c-sEjVqhMj9j2Y3lwcwDrtHk3kODsXSxRePkFFD-jOz5MF6bNLTCGPBeyQfTAdsQMq55cfgCs35paCg-vLvLAGAcQ0CMWvZQbkxUMBLb1Tyud-UuNvH66YpKm0VRxNtfrpQTdJ929TcMV5gM3Sk_E5SdlpWebGhQzZmggos1&amp;t=ca758f3" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=exN6jerzPSvdZdgidckZyXrZ0rD7TN7Yk5T1d1c-f45YDK0UGi-n4TdLjxUbpY73xauz83lfb9AerB1J76f-bX7JpsJBjrGdp96r2kVfGKNd6RQ9b97cy3pixrjtUgXnuIH5Qgx7scAwneJM2696QhOAB1vmardXAG-nJ3qBIlijdbZSkQhS20senPmyjCes0&amp;t=ca758f3" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var PageMethods = function() {
+PageMethods.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+PageMethods.prototype = {
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return PageMethods._staticInstance.get_path();},
+SubmitForm:function(_instance,_compId,flds,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'SubmitForm',false,{_instance:_instance,_compId:_compId,flds:flds},succeededCallback,failedCallback,userContext); }}
+PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+PageMethods._staticInstance = new PageMethods();
+PageMethods.set_path = function(value) { PageMethods._staticInstance.set_path(value); }
+PageMethods.get_path = function() { return PageMethods._staticInstance.get_path(); }
+PageMethods.set_timeout = function(value) { PageMethods._staticInstance.set_timeout(value); }
+PageMethods.get_timeout = function() { return PageMethods._staticInstance.get_timeout(); }
+PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance.set_defaultUserContext(value); }
+PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance.get_defaultUserContext(); }
+PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance.set_defaultSucceededCallback(value); }
+PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance.get_defaultSucceededCallback(); }
+PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance.set_defaultFailedCallback(value); }
+PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance.get_defaultFailedCallback(); }
+PageMethods.set_enableJsonp = function(value) { PageMethods._staticInstance.set_enableJsonp(value); }
+PageMethods.get_enableJsonp = function() { return PageMethods._staticInstance.get_enableJsonp(); }
+PageMethods.set_jsonpCallbackParameter = function(value) { PageMethods._staticInstance.set_jsonpCallbackParameter(value); }
+PageMethods.get_jsonpCallbackParameter = function() { return PageMethods._staticInstance.get_jsonpCallbackParameter(); }
+PageMethods.set_path("form.aspx");
+PageMethods.SubmitForm= function(_instance,_compId,flds,onSuccess,onFailed,userContext) {PageMethods._staticInstance.SubmitForm(_instance,_compId,flds,onSuccess,onFailed,userContext); }
+var gtc = Sys.Net.WebServiceProxy._generateTypedConstructor;
+Type.registerNamespace('ASP');
+if (typeof(ASP.DataField) === 'undefined') {
+ASP.DataField=gtc("ASP.DataField");
+ASP.DataField.registerClass('ASP.DataField');
+}
+if (typeof(ASP.SubmitFormResponse) === 'undefined') {
+ASP.SubmitFormResponse=gtc("ASP.SubmitFormResponse");
+ASP.SubmitFormResponse.registerClass('ASP.SubmitFormResponse');
+}
+//]]>
+</script>
+
+    
+
+    
+
+    <div id="divFieldsHolder" style="padding-left:50px; padding-top:50px;">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+          <!-- form width HERE -->
+            
+            <tbody><tr id="trColumFieldsContainerTop">
+                <td id="tdColum1" style="padding-right:5px" valign="top" colspan="2"><table  width="17%" cellpadding="0" cellspacing="0"><tbody><tr><td><input type="text" style="width:100%;height:23pt;background:rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box; color:rgb(0, 0, 0); font-family:Arial,&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size:13pt;line-height:13pt;;font-size:13pt;line-height:13pt;; border:1px solid rgb(0, 0, 0);;-webkit-border-radius: 4px;-moz-border-radius: 4px;-ms-border-radius: 4px;-o-border-radius: 4px;border-radius: 4px;; " fieldkey="FullName" placeholder="Name" maxlength="100" class="placeholder"></td></tr><tr><td style="padding-top:10px;"><input type="text" style="width:100%;height:23pt;background:rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box; color:rgb(0, 0, 0); font-family:Arial,&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size:13pt;line-height:13pt;;font-size:13pt;line-height:13pt;; border:1px solid rgb(0, 0, 0);;-webkit-border-radius: 4px;-moz-border-radius: 4px;-ms-border-radius: 4px;-o-border-radius: 4px;border-radius: 4px;; " fieldkey="Email" placeholder="Email" maxlength="256" class="placeholder"></td></tr><tr><td></td></tr><tr><td style="padding-top:10px;"><input type="text" style="width:100%;height:23pt;background:rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box; color:rgb(0, 0, 0); font-family:Arial,&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size:13pt;line-height:13pt;;font-size:13pt;line-height:13pt;; border:1px solid rgb(0, 0, 0);;-webkit-border-radius: 4px;-moz-border-radius: 4px;-ms-border-radius: 4px;-o-border-radius: 4px;border-radius: 4px;; " fieldkey="CellPhone" placeholder="Mobile" maxlength="50" class="placeholder"></td></tr></tbody></table></td>
+
+                
+            </tr>
+            
+            <tr id="trButtonBottom">
+  <td id="divButtonBottomHolder" colspan="2"><div style="padding-top:10px;" width="100%"><div class="divError" style="display:none;float:left"><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span><span class="divErrorText"></span></div><input type="submit" id="formSubmitBtn" onclick="btnSubmitForm(this)" value="Submit" class="btn btn-warning" style="color:rgb(255, 255, 255);"></div></td>
+</tr>
+
+        </tbody></table>
+    </div>
+ 
+ </form>
+
+
+
+
+
+<div id="square"></div>
+
+
+
+<div class="row">
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+</div>
+<div class="row">
+  <div class="col-md-8">.col-md-8</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-6">.col-md-6</div>
+  <div class="col-md-6">.col-md-6</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 
 <%= yield %>
+
+-->
 
 </body>
 </html>

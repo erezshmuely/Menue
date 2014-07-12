@@ -5,9 +5,551 @@
 @import "bootstrap";
 
 
+body
+{
+margin:0px;
+padding:0px;
+width:100%;
+}
 
 
+
+
+#square {
+    width: 300px;
+    height: 20%;
+    background: #2D2D2B;
+    position: relative;
+    z-index:-2;
+     top: 0%;
+     left: 10px;
+}
+
+
+
+
+.inn{
+  display:inline;
+  color: white;
+background-color: black;
+}
+
+.text{
+position: relative;
+    top: -20px;
+  display:inline;
+  color: white;
+background-color: black;
+}
  
+
+.clock{
+
+    top: -50px;
+    right: -500px;
+
+    position: relative !important;
+padding-top: 0px;
+margin-left: -194px;
+height:100px;
+width: 800px;
+/*zoom: .6;*/ 
+transform: scale(.54);
+-ms-transform: scale(.54); /* IE 9 */
+-webkit-transform: scale(.54); /* Safari and Chrome */
+-o-transform: scale(.54); /* Opera */
+-moz-transform: scale(.54); /* Firefox */
+    
+    
+    
+}
+
+
+
+
+#L {
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    zoom: 0.115;
+
+}
+
+
+#R {
+    
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    zoom: 0.115;
+}
+
+    
+.pos1{
+
+position: relative;
+    top: 20px;
+    
+}
+
+
+
+
+
+
+.pos2{
+
+position: relative;
+    top: 80px;
+    
+}
+
+
+
+#DIV_1 {
+    background-position: 0px 0px;
+    bottom: 0px;
+    height: 415px;
+    left: 0px;
+    position: absolute;
+    right: 50px;
+    top: 200px;
+    width: 305px;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    font: normal normal normal 10px/normal Arial, Helvetica, sans-serif;
+}/*#DIV_1*/
+
+#DIV_2 {
+    background-position: 0px 0px;
+    height: 106px;
+    left: 15px;
+    min-height: 106px;
+    overflow-wrap: break-word;
+    position: absolute;
+    top: 8px;
+    width: 275px;
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    font: normal normal normal 10px/normal Arial, Helvetica, sans-serif;
+}/*#DIV_2*/
+
+#H5_3 {
+    background-position: 0px 0px;
+    color: rgb(84, 86, 88);
+    direction: rtl;
+    height: 30px;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration: none solid rgb(84, 86, 88);
+    unicode-bidi: embed;
+    width: 275px;
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(84, 86, 88);
+    font: normal normal normal 25px/30px 'open sans', sans-serif;
+    margin: 0px;
+    outline: rgb(84, 86, 88) none 0px;
+}/*#H5_3*/
+
+#SPAN_4 {
+    background-position: 0px 0px;
+    color: rgb(84, 86, 88);
+    direction: rtl;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration: none solid rgb(84, 86, 88);
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(84, 86, 88);
+    font: normal normal normal 25px/30px 'open sans', sans-serif;
+    outline: rgb(84, 86, 88) none 0px;
+}/*#SPAN_4*/
+
+#SPAN_5 {
+    background-position: 0px 0px;
+    color: rgb(255, 255, 255);
+    direction: rtl;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(255, 255, 255);
+    font: normal normal normal 25px/30px 'open sans', sans-serif;
+    outline: rgb(255, 255, 255) none 0px;
+}/*#SPAN_5*/
+
+#P_6 {
+    background-position: 0px 0px;
+    color: rgb(84, 86, 88);
+    direction: rtl;
+    height: 14px;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration: none solid rgb(84, 86, 88);
+    unicode-bidi: embed;
+    width: 275px;
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(84, 86, 88);
+    font: normal normal normal 11px/14.300000190734863px tahoma, tahoma-w01-regular, tahoma-w02-regular, tahoma-w10-regular, tahoma-w15--regular, tahoma-w99-regular, sans-serif;
+    margin: 0px;
+    outline: rgb(84, 86, 88) none 0px;
+}/*#P_6*/
+
+#P_7 {
+    background-position: 0px 0px;
+    color: rgb(84, 86, 88);
+    direction: rtl;
+    height: 23px;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration: none solid rgb(84, 86, 88);
+    unicode-bidi: embed;
+    width: 275px;
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(84, 86, 88);
+    font: normal normal normal 18px/23.399999618530273px tahoma, tahoma-w01-regular, tahoma-w02-regular, tahoma-w10-regular, tahoma-w15--regular, tahoma-w99-regular, sans-serif;
+    margin: 0px;
+    outline: rgb(84, 86, 88) none 0px;
+}/*#P_7*/
+
+#P_8 {
+    background-position: 0px 0px;
+    color: rgb(84, 86, 88);
+    height: 13px;
+    overflow-wrap: break-word;
+    text-decoration: none solid rgb(84, 86, 88);
+    width: 275px;
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(84, 86, 88);
+    font: normal normal normal 11px/normal tahoma, tahoma-w01-regular, tahoma-w02-regular, tahoma-w10-regular, tahoma-w15--regular, tahoma-w99-regular, sans-serif;
+    margin: 0px;
+    outline: rgb(84, 86, 88) none 0px;
+}/*#P_8*/
+
+#P_9 {
+    background-position: 0px 0px;
+    color: rgb(84, 86, 88);
+    height: 14px;
+    overflow-wrap: break-word;
+    text-decoration: none solid rgb(84, 86, 88);
+    width: 275px;
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(84, 86, 88);
+    font: normal normal normal 11px/14.300000190734863px tahoma, tahoma-w01-regular, tahoma-w02-regular, tahoma-w10-regular, tahoma-w15--regular, tahoma-w99-regular, sans-serif;
+    margin: 0px;
+    outline: rgb(84, 86, 88) none 0px;
+}/*#P_9*/
+
+#SPAN_10 {
+    background-position: 0px 0px;
+    color: rgb(84, 86, 88);
+    overflow-wrap: break-word;
+    text-decoration: none solid rgb(84, 86, 88);
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(84, 86, 88);
+    font: normal normal normal 11px/14.300000190734863px tahoma, tahoma-w01-regular, tahoma-w02-regular, tahoma-w10-regular, tahoma-w15--regular, tahoma-w99-regular, sans-serif;
+    outline: rgb(84, 86, 88) none 0px;
+}/*#SPAN_10*/
+
+#SPAN_11 {
+    background-position: 0px 0px;
+    color: rgb(197, 195, 195);
+    overflow-wrap: break-word;
+    text-decoration: none solid rgb(197, 195, 195);
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(197, 195, 195);
+    font: normal normal normal 11px/14.300000190734863px tahoma, tahoma-w01-regular, tahoma-w02-regular, tahoma-w10-regular, tahoma-w15--regular, tahoma-w99-regular, sans-serif;
+    outline: rgb(197, 195, 195) none 0px;
+}/*#SPAN_11*/
+
+#DIV_12 {
+    background-position: 0px 0px;
+    height: 180px;
+    left: 40px;
+    min-height: 180px;
+    min-width: 225px;
+    position: absolute;
+    text-align: left;
+    top: 260px;
+    width: 225px;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    font: normal normal normal 10px/normal Arial, Helvetica, sans-serif;
+}/*#DIV_12*/
+
+#DIV_13 {
+    background-position: 0px 0px;
+    height: 144px;
+    position: absolute;
+    text-align: left;
+    width: 225px;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    font: normal normal normal 10px/normal Arial, Helvetica, sans-serif;
+}/*#DIV_13*/
+
+#INPUT_14, #INPUT_15 {
+    height: 33px;
+    width: 225px;
+    border: 4px solid rgb(255, 255, 255);
+    font: normal normal normal 12px/15.600000381469727px tahoma, tahoma-w01-regular, tahoma-w02-regular, tahoma-w10-regular, tahoma-w15--regular, tahoma-w99-regular, sans-serif;
+    margin: 0px 0px 5px;
+    padding: 5px;
+}/*#INPUT_14, #INPUT_15*/
+
+#INPUT_16 {
+    height: 33px;
+    width: 225px;
+    border: 4px solid rgb(255, 255, 255);
+    font: normal normal normal 12px/15.600000381469727px tahoma, tahoma-w01-regular, tahoma-w02-regular, tahoma-w10-regular, tahoma-w15--regular, tahoma-w99-regular, sans-serif;
+    margin: 0px 0px 5px;
+    padding: 5px;
+}/*#INPUT_16*/
+
+#INPUT_17, #INPUT_18 {
+    display: none;
+    height: auto;
+    width: 100%;
+    border: 4px solid rgb(255, 255, 255);
+    font: normal normal normal 12px/15.600000381469727px tahoma, tahoma-w01-regular, tahoma-w02-regular, tahoma-w10-regular, tahoma-w15--regular, tahoma-w99-regular, sans-serif;
+    margin: 0px 0px 5px;
+    padding: 5px;
+}/*#INPUT_17, #INPUT_18*/
+
+#TEXTAREA_19 {
+    display: none;
+    height: auto;
+    min-height: 130px;
+    resize: none;
+    width: 100%;
+    border: 4px solid rgb(255, 255, 255);
+    font: normal normal normal 12px/15.600000381469727px tahoma, tahoma-w01-regular, tahoma-w02-regular, tahoma-w10-regular, tahoma-w15--regular, tahoma-w99-regular, sans-serif;
+    margin: 0px 0px 5px;
+    overflow: visible;
+    padding: 5px;
+}/*#TEXTAREA_19*/
+
+#BUTTON_20 {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 30px;
+    max-width: 35%;
+    text-decoration: none solid rgb(255, 255, 255);
+    width: 44px;
+    background: rgb(227, 109, 1) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(255, 255, 255);
+    font: normal normal normal 16px/20.799999237060547px tahoma, tahoma-w01-regular, tahoma-w02-regular, tahoma-w10-regular, tahoma-w15--regular, tahoma-w99-regular, sans-serif;
+    margin: 0px;
+    outline: rgb(255, 255, 255) none 0px;
+    padding: 5px;
+}/*#BUTTON_20*/
+
+#SPAN_21 {
+    background-position: 0px 0px;
+    display: block;
+    float: left;
+    height: 0px;
+    max-width: 60%;
+    text-align: left;
+    width: 0px;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    font: normal normal normal 14px/normal 'Helvetica Neue', Helvetica, sans-serif;
+}/*#SPAN_21*/
+
+#DIV_22 {
+    background-position: 0px 0px;
+    height: 72px;
+    left: 46px;
+    min-height: 72px;
+    position: absolute;
+    top: 96px;
+    width: 210px;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    font: normal normal normal 10px/normal Arial, Helvetica, sans-serif;
+}/*#DIV_22*/
+
+#IFRAME_23 {
+    background-position: 0px 0px;
+    display: block;
+    height: 72px;
+    position: absolute;
+    width: 210px;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(0, 0, 0);
+    font: normal normal normal 10px/normal Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}/*#IFRAME_23*/
+
+#DIV_24 {
+    background-position: 0px 0px;
+    height: 61px;
+    left: -23px;
+    min-height: 61px;
+    overflow-wrap: break-word;
+    position: absolute;
+    top: 45px;
+    width: 350px;
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    font: normal normal normal 10px/normal Arial, Helvetica, sans-serif;
+}/*#DIV_24*/
+
+#P_25, #P_27 {
+    background-position: 0px 0px;
+    color: rgb(84, 86, 88);
+    direction: rtl;
+    height: 23px;
+    max-width: 99.9000015258789%;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration: none solid rgb(84, 86, 88);
+    unicode-bidi: embed;
+    width: 349.640625px;
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(84, 86, 88);
+    font: normal normal normal 18px/23.399999618530273px tahoma, tahoma-w01-regular, tahoma-w02-regular, tahoma-w10-regular, tahoma-w15--regular, tahoma-w99-regular, sans-serif;
+    margin: 0px;
+    outline: rgb(84, 86, 88) none 0px;
+}/*#P_25, #P_27*/
+
+#FONT_26, #FONT_28 {
+    background-position: 0px 0px;
+    color: rgb(197, 195, 195);
+    direction: rtl;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration: none solid rgb(197, 195, 195);
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(197, 195, 195);
+    font: normal normal normal 18px/23.399999618530273px tahoma, tahoma-w01-regular, tahoma-w02-regular, tahoma-w10-regular, tahoma-w15--regular, tahoma-w99-regular, sans-serif;
+    outline: rgb(197, 195, 195) none 0px;
+}/*#FONT_26, #FONT_28*/
+
+#P_29 {
+    background-position: 0px 0px;
+    color: rgb(84, 86, 88);
+    height: 14px;
+    overflow-wrap: break-word;
+    text-decoration: none solid rgb(84, 86, 88);
+    width: 350px;
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(84, 86, 88);
+    font: normal normal normal 12px/normal tahoma, tahoma-w01-regular, tahoma-w02-regular, tahoma-w10-regular, tahoma-w15--regular, tahoma-w99-regular, sans-serif;
+    margin: 0px;
+    outline: rgb(84, 86, 88) none 0px;
+}/*#P_29*/
+
+#DIV_30 {
+    background-position: 0px 0px;
+    height: 35px;
+    left: -7px;
+    min-height: 35px;
+    overflow-wrap: break-word;
+    position: absolute;
+    top: 176px;
+    width: 316px;
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    font: normal normal normal 10px/normal Arial, Helvetica, sans-serif;
+}/*#DIV_30*/
+
+#H2_31 {
+    background-position: 0px 0px;
+    color: rgb(84, 86, 88);
+    direction: rtl;
+    height: 24px;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration: none solid rgb(84, 86, 88);
+    unicode-bidi: embed;
+    width: 316px;
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(84, 86, 88);
+    font: normal normal normal 30px/23.390625px 'open sans', sans-serif;
+    margin: 0px;
+    outline: rgb(84, 86, 88) none 0px;
+}/*#H2_31*/
+
+#SPAN_32, #SPAN_33 {
+    background-position: 0px 0px;
+    color: rgb(84, 86, 88);
+    direction: rtl;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration: none solid rgb(84, 86, 88);
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(84, 86, 88);
+    font: normal normal normal 30px/23.390625px 'open sans', sans-serif;
+    outline: rgb(84, 86, 88) none 0px;
+}/*#SPAN_32, #SPAN_33*/
+
+#FONT_34, #FONT_37 {
+    background-position: 0px 0px;
+    color: rgb(197, 195, 195);
+    direction: rtl;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration: none solid rgb(197, 195, 195);
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(197, 195, 195);
+    font: normal normal normal 30px/23.390625px tahoma, tahoma-w01-regular, tahoma-w02-regular, tahoma-w10-regular, tahoma-w15--regular, tahoma-w99-regular, sans-serif;
+    outline: rgb(197, 195, 195) none 0px;
+}/*#FONT_34, #FONT_37*/
+
+#DIV_35 {
+    background-position: 0px 0px;
+    height: 28px;
+    left: -24px;
+    min-height: 28px;
+    overflow-wrap: break-word;
+    position: absolute;
+    top: 216px;
+    width: 350px;
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    font: normal normal normal 10px/normal Arial, Helvetica, sans-serif;
+}/*#DIV_35*/
+
+#H2_36 {
+    background-position: 0px 0px;
+    color: rgb(84, 86, 88);
+    direction: rtl;
+    height: 24px;
+    max-width: 99.9000015258789%;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration: none solid rgb(84, 86, 88);
+    unicode-bidi: embed;
+    width: 349.640625px;
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(84, 86, 88);
+    font: normal normal normal 30px/23.390625px 'open sans', sans-serif;
+    margin: 0px;
+    outline: rgb(84, 86, 88) none 0px;
+}/*#H2_36*/
+
+
+
+
+
+
+
+
 
 
 #t1 {
@@ -71,9 +613,12 @@ div.topmenue {
 	
 }
 
-body
-{
-margin:0px;
-padding:0px;
-width:100%;
-}
+
+
+
+
+
+
+
+
+
