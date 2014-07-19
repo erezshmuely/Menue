@@ -6,11 +6,34 @@
 	 <meta name="viewport" content="width=1360">
 
 
+<%= stylesheet_link_tag "application" %>
+
+<%= stylesheet_link_tag "zombies" %>
+
+<%= stylesheet_link_tag "flipclock" %>
+
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js">
+    </script>
+
+
+
+
+
+
+
+
 
 
 </head>
 
 <body id="main">
+
+
+
 
 
 
@@ -22,7 +45,7 @@
     $(document).ready(function() {
       var clock;
 
-      clock = $('.clock').FlipClock(604800, {
+      clock = $('.clock').FlipClock(604759, {
             clockFace: 'DailyCounter',
             countdown: true,
             callbacks: {
@@ -115,12 +138,6 @@
     </h2>
   </div>
 </div>
-
-
-
-
-<div id="txt"></div>
-
 
 
 
@@ -290,20 +307,19 @@ ASP.SubmitFormResponse.registerClass('ASP.SubmitFormResponse');
 
 
 
+<div id="txt"></div>
+
+<div class="clock"> </div>
 
 
 
-<%= stylesheet_link_tag "application" %>
+<%= javascript_include_tag "jquery" %>
 
+<%= javascript_include_tag "flipclock" %>
 
+<%= javascript_include_tag "flipclock.min" %>
 
-
-
-
-
-
-
-
+<%= javascript_include_tag "application" %>
 
 
 
